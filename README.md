@@ -1,0 +1,1 @@
+# Class-based-view-in-CurdDjango
