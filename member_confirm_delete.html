@@ -1,0 +1,16 @@
+{% extends 'crud/base.html' %}
+{% block body %}
+<style>
+    form{
+        text-align: center;
+    }
+</style>
+<form action="" method="post">
+    {% csrf_token %}
+    <p>Are you sure to delete this item?</p>
+    
+    <input type="submit" class="btn btn-primary" value="Delete" name="confirm_delete" />
+    <input type="submit" class="btn btn-primary" value="Cancel" name="cancel"/>
+</form>
+
+{% endblock %}
